@@ -5,10 +5,15 @@ class Pato(object):
         self.sonido = sonido
 
     def getSonido(self):
-        return self.sonido
+        print(self.sonido)
+
+class Estanque(object):
+    def __init__(self,unPato):
+        self.unPato = unPato
 
     
-if __name__ == "__main__"
-    p = Pato()
-    print(p.getSonido())
+if __name__ == "__main__":
+    p = Pato("Quack")
+    estanque = Estanque(p)
+    estanque.unPato.getSonido()
     
