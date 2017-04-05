@@ -1,9 +1,3 @@
-
-"""
-Template Method en Python
-Adaptado de:
-http://jpython.blogspot.com.co/2012/11/design-pattern-in-python-template-method.html
-"""
 class MakeMeal:
 
     def prepare(self):  pass
@@ -40,11 +34,8 @@ class MakeTea(MakeMeal):
 
 if __name__ == "__main__":
 
-    m = new MakePizza();
+    m =  MakePizza();
     m.go()
 
-    n = new MakeTea();
+    n = MakeTea();
     n.go()
-        
-
-        
